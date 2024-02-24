@@ -1,0 +1,185 @@
+/* General Root
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #001;
+  display: flex;
+}
+
+:root {
+  --menu-bc: #123;
+  --menu-item-bc: #ffffff55;
+  --white-bc: #fff;
+  --blue-bc: #0281fe;
+}
+
+.img-box {
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid grey;
+  flex-shrink: 0;
+  margin-left: 5px;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 10px 0 20px 0;
+  overflow: hidden;
+}
+
+.profile h2 {
+  font-size: 20px;
+  text-transform: capitalize;
+  letter-spacing: 1.2px;
+  margin-top: 2px;
+}
+
+.menu {
+  background-color: var(--menu-bc);
+  width: 100px;
+  height: 100vh;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.menu:hover {
+  width: 260px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.menu ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  transition: all 0.5s ease;
+}
+
+ul li a:hover,
+.active .content .data-info .box:hover,
+table td:hover {
+  background-color: var(--menu-item-bc);
+  /* color: black; */
+}
+
+.data-info .box:hover {
+  background-color: var(--menu-item-bc);
+}
+.log-out {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+}
+
+.menu ul .log-out a {
+  background-color: #a00;
+}
+
+.menu ul li a i {
+  font-size: 30px;
+}
+
+.content {
+  width: 100vw;
+  margin: 10px;
+}
+
+.content .title-info {
+  background-color: var(--blue-bc);
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.content .data-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.content .data-info .box {
+  height: 200px;
+  background-color: var(--menu-bc);
+  flex-basis: 200px;
+  flex-grow: 1;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.content .data-info .box i {
+  font-size: 30px;
+}
+.content .data-info .box span {
+  display: block;
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+.content .data-info .box .contents {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  border-spacing: 8px;
+}
+
+table th,
+td {
+  background-color: #123;
+  height: 40px;
+  border-radius: 8px;
+}
+
+table th {
+  background-color: var(--blue-bc);
+}
+
+.price,
+.count {
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.price {
+  background-color: green;
+}
+
+.count {
+  background-color: gold;
+} */
