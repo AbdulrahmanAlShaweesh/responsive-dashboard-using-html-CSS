@@ -7,6 +7,7 @@
 
 body {
   background-color: #001;
+  display: flex;
 }
 
 :root {
@@ -94,4 +95,85 @@ body {
   height: 50px;
 }
 
-/* contents */ 
+/* contents */
+.contents {
+  width: 100vw;
+  margin: 10px;
+}
+
+.contents .title-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--blue-bc);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.contents .data-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0px 10px 0px;
+}
+
+.contents .data-info .box {
+  height: 200px;
+  flex-basis: 200px;
+  background-color: var(--menu-bc);
+  flex-grow: 1;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  transition: 0.5s;
+}
+
+.contents .data-info .box:hover {
+  background-color: var(--menu-item-bc);
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  border-spacing: 10px;
+  margin-top: 10px;
+}
+
+table th,
+td {
+  background-color: var(--menu-bc);
+  height: 40px;
+  border-radius: 8px;
+  transition: 0.5s;
+  padding: 5px;
+}
+
+table th {
+  background-color: var(--blue-bc);
+}
+
+table :first-child {
+  text-transform: capitalize;
+}
+
+table td:hover {
+  background-color: var(--menu-item-bc);
+}
+
+table .price,
+table .count {
+  padding: 10px;
+  border-radius: 8px;
+}
+
+table .price {
+  background-color: green;
+}
+
+table .count {
+  background-color: gold;
+}
