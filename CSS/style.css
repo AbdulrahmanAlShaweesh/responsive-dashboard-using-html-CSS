@@ -30,6 +30,7 @@ body {
 
 .menu:hover {
   width: 260px;
+  gap: 10px;
 }
 
 .menu ul {
@@ -51,6 +52,7 @@ body {
 .active {
   background-color: var(--menu-item-bc);
   align-items: center;
+  gap: 10px;
 }
 
 .menu .profile h3 {
